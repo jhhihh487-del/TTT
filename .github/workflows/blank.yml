@@ -27,7 +27,7 @@ jobs:
         run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-asset@v4
         with:
           name: LocalImageStudio-debug
           path: app/build/outputs/apk/debug/*.apk
